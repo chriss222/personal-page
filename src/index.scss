@@ -27,8 +27,6 @@
 }
 
 :root {
-  box-sizing: border-box;
-  margin: 0;
   font-family: "montserrat", sans-serif;
   line-height: 1;
   font-weight: 400;
@@ -36,4 +34,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
 }

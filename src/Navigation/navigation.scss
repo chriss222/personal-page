@@ -1,0 +1,35 @@
+.navigation-container {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 100px;
+  background: rgba(26, 26, 26, 0.8);
+  .btn-container.active {
+    button {
+      color: #ffab5e;
+    }
+  }
+  button {
+    border: none;
+    background: transparent;
+    color: #fff;
+    border-radius: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 42px;
+    width: 48px;
+    font-size: 22px;
+    padding: 2px 6px;
+    gap: 4px;
+    transition: all 0.3s ease-in;
+    p {
+      font-size: 8px;
+    }
+  }
+}
