@@ -8,6 +8,8 @@
   padding: 6px 12px;
   border-radius: 100px;
   background: rgba(26, 26, 26, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   .btn-container.active {
     button {
       color: #ffab5e;
@@ -30,6 +32,22 @@
     transition: all 0.3s ease-in;
     p {
       font-size: 8px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .navigation-container {
+    gap: 16px;
+    padding: 16px 32px;
+    button {
+      font-size: 72px;
+      height: 62px;
+      width: 68px;
+      gap: 8px;
+      p {
+        font-size: 16px;
+      }
     }
   }
 }

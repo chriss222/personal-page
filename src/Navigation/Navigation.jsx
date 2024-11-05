@@ -31,9 +31,9 @@ const Navigation = ({ sectionRefs }) => {
       { threshold: 0.4 }
     );
 
-    sectionRefs.current.forEach((ref) => {
+    sectionRefs.forEach((ref) => {
       if (ref) {
-        observer.observe(ref);
+        observer.observe(ref.current);
       }
     });
 
@@ -48,7 +48,7 @@ const Navigation = ({ sectionRefs }) => {
         <Button
           key={section.id}
           customClass={`${section.id} ${activeSection === section.id ? "active" : ""}`}
-          handleClick={() => scrollToSection(sectionRefs.current[i])}
+          handleClick={() => scrollToSection(sectionRefs[i].current)}
         >
           <>
             {section.asset}

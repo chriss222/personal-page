@@ -1,0 +1,127 @@
+.heading-wrapper {
+  padding-top: 48px;
+}
+.hero-photo-container {
+  height: 220px;
+  width: 100%;
+  background: linear-gradient(45deg, rgb(255, 171, 94) 3%, rgb(28, 27, 27) 40%, rgba(28, 27, 27, 0) 92%);
+  width: 220px;
+  margin: auto;
+  border-radius: 100vw;
+  position: relative;
+  img {
+    position: absolute;
+    left: 42px;
+    top: 0;
+  }
+}
+.heading-text-container {
+  text-align: center;
+  margin-top: 22px;
+  color: #fff;
+  h1 {
+    margin-bottom: 12px;
+  }
+  span {
+    color: transparent;
+    background: linear-gradient(90deg, rgba(47, 72, 88, 1) 20%, rgba(255, 171, 94, 1) 75%);
+    background-clip: text;
+  }
+}
+.heading-actions-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  gap: 16px;
+  button {
+    border-radius: 100vw;
+    padding: 12px 18px;
+    color: #000;
+    border: none;
+    font-weight: 600;
+  }
+  .about-btn button {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  .contact-btn button {
+    background: #8ce83c;
+    border: 1px solid transparent;
+  }
+}
+.platform-swiper-wrapper {
+  margin: 32px 12px;
+}
+.platform-swiper-title {
+  width: fit-content;
+  margin: auto;
+  color: #fff;
+  background: #938a8a5e;
+  border-radius: 16px 16px 0 0;
+  font-size: 12px;
+  padding: 4px 24px;
+  border-bottom: 2px solid #000;
+}
+.platform-swiper-container {
+  padding: 12px 14px;
+  max-width: 680px;
+  margin: auto;
+  background: #938a8a5e;
+  border-radius: 100vw;
+  .swiper-wrapper {
+    transition-timing-function: linear;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading-wrapper {
+    padding-top: 64px;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+  }
+  .hero-photo-container {
+    height: 300px;
+    width: 320px;
+    margin: auto auto auto 0;
+    img {
+      height: 280px;
+      width: 300px;
+      left: 86px;
+      top: 24px;
+    }
+  }
+  .heading-text-container {
+    margin-top: 46px;
+    h1 {
+      font-size: 28px;
+      margin-bottom: 24px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  .heading-actions-container {
+    margin-top: 42px;
+    button {
+      font-size: 18px;
+      padding: 16px 24px;
+    }
+  }
+  .heading-text-container {
+    margin-top: 46px;
+  }
+  .platform-swiper-wrapper {
+    margin: 46px 16px;
+  }
+  .platform-swiper-title {
+    font-size: 16px;
+    padding: 6px 32px;
+  }
+  .platform-swiper-container {
+    margin: auto;
+  }
+}

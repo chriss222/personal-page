@@ -7,14 +7,18 @@ import ContactSection from "./ContactSection/ContactSection.jsx";
 import ProjectsSection from "./ProjectsSection/ProjectsSection.jsx";
 
 function App() {
-  const sectionsRef = useRef([]);
+  const heroRef = useRef(null);
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
+
   return (
     <div className="main">
-      <Navigation sectionRefs={sectionsRef} />
-      <HeroSection ref={(el) => (sectionsRef.current[0] = el)} />
-      <AboutSection ref={(el) => (sectionsRef.current[1] = el)} />
-      <ProjectsSection ref={(el) => (sectionsRef.current[2] = el)} />
-      <ContactSection ref={(el) => (sectionsRef.current[3] = el)} />
+      <Navigation sectionRefs={[heroRef, aboutRef, projectsRef, contactRef]} />
+      <HeroSection ref={heroRef} />
+      <AboutSection ref={aboutRef} />
+      <ProjectsSection ref={projectsRef} />
+      <ContactSection ref={contactRef} />
     </div>
   );
 }
