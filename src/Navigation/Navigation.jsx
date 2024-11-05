@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { scrollToSection } from "../utils/sections";
 import Button from "../components/Button";
-import "./navigation.scss";
+import { motion } from "framer-motion";
 import Home from "../assets/svgs/home";
 import About from "../assets/svgs/About";
 import Projects from "../assets/svgs/Projects";
 import Contact from "../assets/svgs/Contact";
+import "./navigation.scss";
 
 const sections = [
   { id: "hero", title: "Home", asset: <Home /> },
@@ -43,7 +44,19 @@ const Navigation = ({ sectionRefs }) => {
   }, [sectionRefs]);
 
   return (
-    <div className="navigation-container">
+    <motion.div
+      className="navigation-container"
+      initial={{ x: "-150vw" }}
+      animate={{ x: "-50%" }}
+      transition={{
+        type: "spring",
+        stiffness: 100,
+        damping: 10,
+        mass: 0.75,
+        duration: 1,
+        delay: 1.25,
+      }}
+    >
       {sections.map((section, i) => (
         <Button
           key={section.id}
@@ -56,7 +69,7 @@ const Navigation = ({ sectionRefs }) => {
           </>
         </Button>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
