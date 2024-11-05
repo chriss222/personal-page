@@ -1,5 +1,6 @@
 .navigation-container {
   position: fixed;
+  z-index: 9;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);

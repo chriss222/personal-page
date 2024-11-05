@@ -2,9 +2,9 @@ import React, { forwardRef } from "react";
 import Section from "../components/Section.jsx";
 import coding from "../assets/images/coding.webp";
 import { motion } from "framer-motion";
-import "./heroSection.scss";
 import Button from "../components/Button.jsx";
 import PlatformSwiper from "./PlatformSwiper.jsx";
+import "./heroSection.scss";
 
 const HeroSection = forwardRef((props, ref) => {
   return (
@@ -22,7 +22,7 @@ const HeroSection = forwardRef((props, ref) => {
             y: { duration: 4, repeat: Infinity, repeatType: "loop", ease: "easeInOut" },
           }}
         >
-          <img src={coding} width={220} height={260} alt="programmer on laptop" />
+          <img src={coding} width={240} height={260} alt="programmer on laptop" />
         </motion.div>
         <div className="heading-text-wrapper">
           <div className="heading-text-container">
