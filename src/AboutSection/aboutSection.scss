@@ -1,0 +1,61 @@
+.about-showcase-container {
+  margin: 12px 8px;
+  background: rgba(26, 26, 26, 1);
+  border-radius: 8px;
+  color: #fff;
+  box-shadow: #fff;
+  box-shadow: 0 0 0px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.3), 0 0 11px rgba(255, 255, 255, 0.1);
+}
+.showcase-header {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #fff;
+  .work-btn button {
+    border-right: 2px solid #fff;
+  }
+  button {
+    margin: 18px 0;
+    padding: 6px 18px;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+  }
+}
+.showcase-header .active button {
+  color: rgba(255, 171, 94, 1);
+}
+.showcase-container {
+  display: flex;
+  min-height: 260px;
+}
+.showcase-swiper-container {
+  width: 70%;
+  overflow: hidden;
+  padding: 14px 10px;
+  .swiper {
+    height: 100%;
+  }
+  .slide-paragraph {
+    line-height: 1.2;
+  }
+}
+.showcase-navigation-container {
+  width: 30%;
+  border-right: 2px solid #fff;
+}
+.showcase-navigation-list {
+  .tab-btn.active button {
+    color: rgba(255, 171, 94, 1);
+  }
+  button {
+    width: 100%;
+    padding: 12px 4px;
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+  }
+}
