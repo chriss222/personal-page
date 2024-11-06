@@ -54,6 +54,18 @@
     order: 1;
     flex: 1;
   }
+  .achievments-header {
+    font-size: 42px;
+  }
+  .achievement-top {
+    font-size: 20px;
+    padding: 12px 0;
+  }
+  .achievement-card-content {
+    p {
+      font-size: 18px;
+    }
+  }
   .achievments-asset-container {
     position: static;
     flex: 1;
