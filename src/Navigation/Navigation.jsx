@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { scrollToSection } from "../utils/sections";
 import Button from "../components/Button";
 import { motion } from "framer-motion";
-import Home from "../assets/svgs/home";
+import Home from "../assets/svgs/Home";
 import About from "../assets/svgs/About";
 import Projects from "../assets/svgs/Projects";
 import Contact from "../assets/svgs/Contact";
