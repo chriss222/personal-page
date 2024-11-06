@@ -38,7 +38,7 @@ const AchievementsImage = () => {
   }, [isInView, isDesktop, controls]);
 
   return (
-    <motion.div ref={ref} animate={controls} className="achievments-asset-container">
+    <motion.div ref={ref} initial={{ opacity: 0 }} animate={controls} className="achievments-asset-container">
       <img width={180} height={190} src={achievments} alt="achievements image" loading="lazy" />
     </motion.div>
   );

@@ -4,6 +4,10 @@
 .showcase-wrapper {
   position: relative;
 }
+.showcase-content-container {
+  max-width: 560px;
+  margin: auto;
+}
 .showcase-asset-container {
   position: absolute;
   top: 45px;

@@ -45,7 +45,17 @@
   list-style: none;
 }
 
+section {
+  padding: 16px 0;
+}
+
 button {
   transition: all 0.3s ease-in;
   cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  section {
+    padding: 64px 0;
+  }
 }

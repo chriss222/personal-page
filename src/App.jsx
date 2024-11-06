@@ -1,10 +1,10 @@
 import { useRef } from "react";
-import "./App.scss";
 import HeroSection from "./HeroSection/HeroSection.jsx";
 import Navigation from "./Navigation/Navigation.jsx";
 import AboutSection from "./AboutSection/AboutSection.jsx";
 import ContactSection from "./ContactSection/ContactSection.jsx";
 import ProjectsSection from "./ProjectsSection/ProjectsSection.jsx";
+import "./App.scss";
 
 function App() {
   const heroRef = useRef(null);

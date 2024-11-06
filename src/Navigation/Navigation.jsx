@@ -27,7 +27,7 @@ const Navigation = ({ sectionRefs }) => {
           }
         });
       },
-      { threshold: 0.4 }
+      { threshold: 0.7 }
     );
 
     sectionRefs.forEach((ref) => {
