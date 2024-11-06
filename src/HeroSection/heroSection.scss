@@ -1,7 +1,7 @@
 .heading-wrapper {
   display: flex;
   flex-direction: column;
-  height: 100svh;
+  min-height: 100svh;
   justify-content: space-evenly;
 }
 .hero-photo-container {
@@ -83,7 +83,6 @@
 
 @media (min-width: 1024px) {
   .heading-wrapper {
-    height: 100svh;
     display: flex;
     flex-direction: row;
     justify-content: center;

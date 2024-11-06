@@ -22,7 +22,7 @@ const HeroSection = forwardRef((props, ref) => {
             y: { duration: 4, repeat: Infinity, repeatType: "loop", ease: "easeInOut" },
           }}
         >
-          <img src={coding} width={240} height={260} alt="programmer on laptop" />
+          <img src={coding} width={260} height={260} alt="programmer on laptop" />
         </motion.div>
         <div className="heading-text-wrapper">
           <div className="heading-text-container">

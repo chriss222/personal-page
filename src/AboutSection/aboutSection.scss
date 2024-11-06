@@ -1,9 +1,17 @@
 .about-wrapper {
   padding-top: 24px;
 }
+.showcase-wrapper {
+  position: relative;
+}
+.showcase-asset-container {
+  position: absolute;
+  top: 45px;
+  z-index: -1;
+}
 .about-showcase-container {
   margin: 24px 8px;
-  background: rgba(26, 26, 26, 1);
+  background: rgba(26, 26, 26, 0.8);
   border-radius: 8px;
   color: #fff;
   box-shadow: 0 0 0px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.3), 0 0 11px rgba(255, 255, 255, 0.1);
@@ -66,5 +74,26 @@
     font-size: 16px;
     color: #fff;
     font-weight: 600;
+  }
+}
+@media (min-width: 1024px) {
+  .showcase-wrapper {
+    display: flex;
+  }
+  .showcase-content-container {
+    max-width: 50%;
+  }
+  .showcase-asset-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 310px;
+      height: 320px;
+    }
+  }
+  .showcase-asset-container {
+    position: static;
   }
 }
