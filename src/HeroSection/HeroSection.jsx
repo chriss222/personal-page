@@ -1,7 +1,7 @@
 import React, { forwardRef } from "react";
 import Section from "../components/Section.jsx";
 import coding from "../assets/images/coding.webp";
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 import Button from "../components/Button.jsx";
 import PlatformSwiper from "./PlatformSwiper.jsx";
 import "./heroSection.scss";
@@ -18,7 +18,7 @@ const HeroSection = forwardRef((props, ref) => {
             opacity: 1,
           }}
           transition={{
-            opacity: { duration: 1.5, ease: "easeInOut" },
+            opacity: { duration: 1.5, ease: "easeInOut", delay: 0.5 },
             y: { duration: 4, repeat: Infinity, repeatType: "loop", ease: "easeInOut" },
           }}
         >
@@ -26,10 +26,10 @@ const HeroSection = forwardRef((props, ref) => {
         </motion.div>
         <div className="heading-text-wrapper">
           <div className="heading-text-container">
-            <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.5 }}>
+            <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 1.5 }}>
               Hi, I'm <span>Mitu Cristian</span>
             </motion.h1>
-            <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.7 }}>
+            <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 1.8 }}>
               A passionate web developer, dedicated to creating impactful digital experiences.
             </motion.p>
           </div>
@@ -37,12 +37,12 @@ const HeroSection = forwardRef((props, ref) => {
             className="heading-actions-container"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.9 }}
+            transition={{ duration: 1, delay: 2 }}
           >
             <Button customClass="about-btn">About me</Button>
             <Button customClass="contact-btn">Contact</Button>
           </motion.div>
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 1.1 }}>
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 2.5 }}>
             <PlatformSwiper />
           </motion.div>
         </div>

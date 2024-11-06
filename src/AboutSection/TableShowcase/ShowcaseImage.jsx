@@ -11,7 +11,7 @@ const ShowcaseImage = () => {
     if (isInView) {
       controls.start({
         opacity: 1,
-        transition: { duration: 1, delay: 1 },
+        transition: { duration: 1 },
       });
 
       controls.start({

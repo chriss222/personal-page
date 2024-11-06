@@ -11,7 +11,7 @@ const TypingText = ({ text = "TypingText", customClass = "" }) => {
           key={index}
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.2, delay: index * 0.1 }}
+          transition={{ duration: 0.1, delay: index * 0.1 }}
         >
           {letter}
         </motion.span>

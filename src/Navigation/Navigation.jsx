@@ -16,8 +16,6 @@ const sections = [
 ];
 
 const Navigation = ({ sectionRefs }) => {
-  console.log("refs: ", sectionRefs);
-
   const [activeSection, setActiveSection] = useState(sections[0].id);
 
   useEffect(() => {

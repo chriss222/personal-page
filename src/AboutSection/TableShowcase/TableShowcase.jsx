@@ -22,9 +22,9 @@ const TableShowcase = () => {
         <motion.div
           className="about-showcase-container"
           ref={tableRef}
-          initial={{ opacity: 0, scale: 0.1 }}
-          animate={isInView ? { opacity: 1, scale: [0.3, 1.2, 1] } : {}}
-          transition={{ opacity: { duration: 0.2 }, scale: { duration: 0.4, delay: 0.2 } }}
+          initial={{ opacity: 0, scale: 0 }}
+          animate={isInView ? { opacity: 1, scale: [0, 1.2, 1] } : {}}
+          transition={{ opacity: { duration: 0.2 }, scale: { duration: 0.4, delay: 2 } }}
         >
           <div className="showcase-header">
             <Button
