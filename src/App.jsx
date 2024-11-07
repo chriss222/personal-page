@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="main">
       <Navigation sectionRefs={[heroRef, aboutRef, projectsRef, contactRef]} />
-      <HeroSection ref={heroRef} />
+      <HeroSection ref={heroRef} aboutRef={aboutRef} contactRef={contactRef} />
       <AboutSection ref={aboutRef} />
       <ProjectsSection ref={projectsRef} />
       <ContactSection ref={contactRef} />

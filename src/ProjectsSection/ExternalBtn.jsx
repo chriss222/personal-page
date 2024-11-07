@@ -2,12 +2,12 @@ import React from "react";
 
 const ExternalBtn = ({ link, icon, text }) => {
   return (
-    <div className="external-container">
-      <a href={link}>
+    <a href={link}>
+      <div className="external-container">
         <img width={28} height={28} src={icon} alt="external icon" />
-      </a>
-      <h3>{text}</h3>
-    </div>
+        <h3>{text}</h3>
+      </div>
+    </a>
   );
 };
 

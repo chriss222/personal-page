@@ -10,7 +10,7 @@ import TypingText from "../../components/TypingText";
 
 const AchievementsSwiper = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false, threshold: 0.1 });
+  const isInView = useInView(ref, { once: true, threshold: 0.1 });
   const [swiper, setSwiper] = useState(null);
 
   useEffect(() => {

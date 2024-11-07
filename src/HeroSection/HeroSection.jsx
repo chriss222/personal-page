@@ -5,8 +5,9 @@ import { delay, motion } from "framer-motion";
 import Button from "../components/Button.jsx";
 import PlatformSwiper from "./PlatformSwiper.jsx";
 import "./heroSection.scss";
+import { scrollToSection } from "../utils/sections.js";
 
-const HeroSection = forwardRef((props, ref) => {
+const HeroSection = forwardRef(({ aboutRef, contactRef }, ref) => {
   return (
     <Section id="hero" ref={ref}>
       <div className="heading-wrapper">
@@ -39,8 +40,12 @@ const HeroSection = forwardRef((props, ref) => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 2 }}
           >
-            <Button customClass="about-btn">About me</Button>
-            <Button customClass="contact-btn">Contact</Button>
+            <Button customClass="about-btn" handleClick={() => scrollToSection(aboutRef.current)}>
+              About me
+            </Button>
+            <Button customClass="contact-btn" handleClick={() => scrollToSection(contactRef.current)}>
+              Contact
+            </Button>
           </motion.div>
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 2.5 }}>
             <PlatformSwiper />
