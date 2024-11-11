@@ -2,7 +2,6 @@ import React from "react";
 import ExternalBtn from "./ExternalBtn";
 
 const Project = ({ project }) => {
-  console.log(project);
   return (
     <div className="project-container">
       <div className="project-heading">
@@ -14,8 +13,8 @@ const Project = ({ project }) => {
       </div>
       {project.externals && (
         <div className="project-externals-container">
-          {project.externals.map((external) => (
-            <ExternalBtn link={external.link} icon={external.ico} text={external.name} />
+          {project.externals.map((external, i) => (
+            <ExternalBtn key={i} link={external.link} icon={external.ico} text={external.name} />
           ))}
         </div>
       )}
