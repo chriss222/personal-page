@@ -19,7 +19,7 @@ const HeroSection = forwardRef(({ aboutRef, contactRef }, ref) => {
             opacity: 1,
           }}
           transition={{
-            opacity: { duration: 1.5, ease: "easeInOut", delay: 0.5 },
+            opacity: { duration: 1.5, ease: "easeInOut", delay: 0.2 },
             y: { duration: 4, repeat: Infinity, repeatType: "loop", ease: "easeInOut" },
           }}
         >
@@ -27,10 +27,10 @@ const HeroSection = forwardRef(({ aboutRef, contactRef }, ref) => {
         </motion.div>
         <div className="heading-text-wrapper">
           <div className="heading-text-container">
-            <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 1.5 }}>
+            <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.7 }}>
               Hi, I'm <span>Mitu Cristian</span>
             </motion.h1>
-            <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 1.8 }}>
+            <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 1 }}>
               A passionate web developer, dedicated to creating impactful digital experiences.
             </motion.p>
           </div>
@@ -38,7 +38,7 @@ const HeroSection = forwardRef(({ aboutRef, contactRef }, ref) => {
             className="heading-actions-container"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 2 }}
+            transition={{ duration: 1, delay: 1.5 }}
           >
             <Button customClass="about-btn" handleClick={() => scrollToSection(aboutRef.current)}>
               About me

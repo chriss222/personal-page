@@ -1,9 +1,19 @@
 import chatbot from "../assets/images/chatbot.webp";
 import gym from "../assets/images/gym.webp";
+import flixverse from "../assets/images/flixverse.webp";
 import github from "../assets/images/github.png";
 import link from "../assets/images/link.png";
 
 const projects = [
+  {
+    name: "Flixverse",
+    information: "Movies/Tv shows current week trending site, integrated with TMDB API.",
+    image: flixverse,
+    externals: [
+      { name: "Github", link: "https://github.com/chriss222/flixverse", ico: github },
+      { name: "Live link", link: "https://theflixverse.netlify.app/", ico: link },
+    ],
+  },
   {
     name: "Chatbot",
     information:

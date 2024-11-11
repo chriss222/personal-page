@@ -1,9 +1,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import projects from "../utils/projectsSection";
-import "swiper/css";
 import Project from "./Project";
 import FindMore from "./FindMore";
+import "swiper/css";
 
 const ProjectsSwiper = () => {
   return (
