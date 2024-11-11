@@ -8,6 +8,7 @@ import "./projectsSection.scss";
 const ProjectsSection = forwardRef((props, ref) => {
   const projectRef = useRef(null);
   const isInView = useInView(projectRef, { once: true });
+
   return (
     <Section id="projects" ref={ref}>
       <div className="projects-wrapper">
@@ -19,7 +20,7 @@ const ProjectsSection = forwardRef((props, ref) => {
           ref={projectRef}
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
-          transition={{ opacity: { duration: 0.2, delay: 1 } }}
+          transition={{ opacity: { duration: 1, delay: 1 } }}
         >
           <ProjectsSwiper />
         </motion.div>

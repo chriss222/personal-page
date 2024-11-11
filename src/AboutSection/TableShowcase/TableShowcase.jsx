@@ -23,8 +23,8 @@ const TableShowcase = () => {
           className="about-showcase-container"
           ref={tableRef}
           initial={{ opacity: 0, scale: 0 }}
-          animate={isInView ? { opacity: 1, scale: [0, 1.2, 1] } : {}}
-          transition={{ opacity: { duration: 0.2 }, scale: { duration: 0.4, delay: 2 } }}
+          animate={isInView ? { opacity: 1, scale: [0, 1.1, 1] } : {}}
+          transition={{ opacity: { duration: 0.4 }, scale: { duration: 0.8, delay: 1.5 } }}
         >
           <div className="showcase-header">
             <Button

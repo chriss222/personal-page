@@ -1,3 +1,6 @@
+#projects {
+  margin: 40px 0;
+}
 .projects-section-header {
   color: #fff;
   text-align: center;
@@ -72,7 +75,15 @@
 }
 
 @media (min-width: 1024px) {
+  #projects {
+    margin: 60px 0;
+    padding: 80px 0;
+  }
   .projects-swiper-container {
     max-width: unset;
+  }
+  .projects-section-header {
+    margin: 32px;
+    font-size: 42px;
   }
 }

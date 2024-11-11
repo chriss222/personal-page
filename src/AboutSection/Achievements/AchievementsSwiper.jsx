@@ -26,7 +26,7 @@ const AchievementsSwiper = () => {
         className="achievments-swiper-container"
         initial={{ opacity: 0 }}
         animate={isInView ? { opacity: 1 } : {}}
-        transition={{ duration: 1, delay: 3 }}
+        transition={{ duration: 1, delay: 2.5 }}
       >
         <Swiper
           ref={ref}
